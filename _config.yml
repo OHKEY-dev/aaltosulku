@@ -9,7 +9,7 @@ prose:
     _posts:
       - name: "layout"
         field:
-          label: "layout"
+          label: "Layout"
           element: "text"
           value: "post"
       - name: "title"
@@ -22,3 +22,8 @@ prose:
           element: "checkbox"
           label: "Published"
           value: true
+       - name: "category"
+        field:
+          element: "text"
+          label: "Category"
+          value: ""
