@@ -4,7 +4,7 @@ permalink: none
 pygments: true
 prose:
   rooturl: '_posts'
-  siteurl: 'http://OHKEY-dev.github.io/perse'
+  siteurl: 'http://OHKEY-dev.github.io/aaltosulku'
   metadata:
     _posts:
       - name: "layout"
