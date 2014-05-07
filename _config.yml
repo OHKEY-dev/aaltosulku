@@ -2,6 +2,8 @@ name: aaltosulku
 baseurl: /aaltosulku
 permalink: none
 prose:
+	rooturl:'_posts'
+	siteurl:'http://OHKEY-dev.github.io/aaltosulku/'
 	metadata:
 	_posts:
 		- name: "layout"
@@ -17,4 +19,5 @@ prose:
 		- name: "category"
 		field:
 			element: "text"
+			label: "Categrory"
 			value: ""
