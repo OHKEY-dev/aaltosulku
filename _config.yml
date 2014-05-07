@@ -22,3 +22,8 @@ prose:
           element: "text"
           label: "Category"
           value: ""
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
