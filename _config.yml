@@ -7,7 +7,7 @@ prose:
   siteurl: 'http://OHKEY-dev.github.io/aaltosulku'
   metadata:
     _posts:
-        - name: "title"
+      - name: "title"
         field:
           label: "Title"
           element: "text"
