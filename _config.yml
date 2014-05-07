@@ -3,7 +3,7 @@ baseurl: /aaltosulku
 permalink: none
 prose:
 	rooturl:'_posts'
-	siteurl:'http://OHKEY-DEV.github.io/aaltosulku/'
+	siteurl:'http://ohkey-dev.github.io/aaltosulku/'
 	media:'assets/media'
 	metadata:
 	_posts:
