@@ -2,7 +2,7 @@ name: aaltosulku
 permalink: none
 pygments: true
 prose:
-	rooturl: '_posts'
+  rooturl: '_posts'
   siteurl: 'http://OHKEY-dev.github.io'
   metadata:
     _posts:
@@ -17,7 +17,7 @@ prose:
         label: "Title"
         value: ""
     - name: "category"
-        field:
+    field:
         element: "text"
         label: "Categrory"
         value: ""
