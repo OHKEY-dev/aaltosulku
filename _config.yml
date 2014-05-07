@@ -8,7 +8,7 @@ prose:
 	metadata:
 	_posts:
 		- name: "layout"
-			field:
+		field:
 		element: "text"
 		label: "Layout"
 		value: "post"
