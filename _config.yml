@@ -20,10 +20,19 @@ prose:
       - name: "category"
         field:
           element: "text"
-          label: "Category"
+          label: "Kategoria"
           value: ""
       - name: "title"
         field:
           element: "text"
-          label: "Title"
+          label: "Otsikko"
           value: ""
+      - name: "subject"
+        field:
+          element: "multiselect"
+          label: "Aihealue"
+          options:
+            - name: "Ohje"
+              value: "guide"
+            - name: "Snippet"
+              value: "snippet"
