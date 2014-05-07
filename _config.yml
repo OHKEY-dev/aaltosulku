@@ -10,7 +10,7 @@ prose:
       - name: "layout"
         field:
           label: "Layout"
-          element: "text"
+          element: "hidden"
           value: "post"
       - name: "published"
         field:
