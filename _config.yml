@@ -29,7 +29,7 @@ prose:
           value: ""
       - name: "subject"
         field:
-          element: "multiselect"
+          element: "select"
           label: "Aihealue"
           options:
             - name: "Ohje"
