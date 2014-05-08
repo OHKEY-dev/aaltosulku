@@ -6,47 +6,54 @@ layout: default
 <div class="rivi">
 	<div class="ruutu-12-tablet">
 
-		<div class="ruutu-2-tablet">
-			<div id="toc" class="affix">
-				<div class="toc-title">
-					<h5>Sisällysluettelo</h5>
-				</div>
-				<ul class="toc-ul nav">
-
-				</ul>
-			</div>
+<div class="ruutu-2-tablet">
+	<div id="toc" class="affix">
+		<div class="toc-title">
+			<h5>Sisällysluettelo</h5>
 		</div>
-		<div class="ruutu-10-tablet">
-			{% for category in site.categories%}
-			{% for posts in category %}
-			{% for post in posts %}
-			{% if post.title != null and post.subject contains "guide" %}
-			<section>
-				<div class="rivi">
-					<div class="ruutu-12-tablet">
-						<div class="cat-main">
-							<div class="cat-sub">
-								<div class="cat-sub-title" name="{{ category | first }}"><h6>{{ category | first | capitalize  }}</h6></div>
-								<div class="cat-sub-content">
+		<ul class="toc-ul nav">
 
-									<div class="sub-title">
-										<div class="sub-title-mark"></div>
-										<div class="rivi"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | camelcase }}</a></div>
-									</div>
+		</ul>
+	</div>
+</div>
 
-								</div>
-							</div>
+<div class="ruutu-10-tablet">
+
+
+{% for category in site.categories %}
+{% for posts in category %}
+{% if category contains "guide" %}
+<section>
+	<div class="rivi">
+		<div class="ruutu-12-tablet">
+			<div class="cat-main">
+				
+				<div class="cat-sub">
+						{% for post in posts %}
+					<div class="cat-sub-title" name="{{ category | first }}"><h6>{{ post.subject | capitalize  }}</h6></div>
+					<div class="cat-sub-content">
+
+						{% if post.title != null %}
+						<div class="sub-title">
+							<div class="sub-title-mark"></div>
+							<div class="rivi"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | camelcase }}</a></div>
 						</div>
+						{% endif %}
+						{% endfor %}
+				
 					</div>
 				</div>
-			</section>
-			{% endif %}
-			{% endfor %}
-			{% endfor %}
-			{% endfor %}
-			<div class="footer-top"></div>
-		</div><!-- .ruutu-10-tablet -->
-	</div><!-- .ruutu-12-tablet -->
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+	<div class="footer-top"></div>
+</div><!-- .ruutu-10-tablet -->
+</div><!-- .ruutu-12-tablet -->
 </div>
 
 
