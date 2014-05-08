@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@import url(Lindeman.css);
+@import url(normalize.css);
+@import url(ruutu.css);
+@import url(tyyli.css);
+@import url(index.css);
+@import url(ohjeet.css);
 /*
 $lindeman-text-color: #444;
 $main: rgba(28,20,13,1);
@@ -7,7 +13,7 @@ $text: grey;
 $link: rgba(183,212,87,1);
 $right: 5px solid rgba(28,20,13,1);
 */
-/* line 20, ../compass/sass/aaltosulku.scss */
+/* line 27, ../compass/sass/aaltosulku.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: white;
@@ -18,7 +24,7 @@ body {
   height: 100%;
 }
 
-/* line 30, ../compass/sass/aaltosulku.scss */
+/* line 37, ../compass/sass/aaltosulku.scss */
 body, html {
   height: 100%;
   margin: 0;
@@ -26,26 +32,26 @@ body, html {
 }
 
 /* Tämä on se efekti, joka tulee maalatessa hiirellä sivulla */
-/* line 37, ../compass/sass/aaltosulku.scss */
+/* line 44, ../compass/sass/aaltosulku.scss */
 ::selection {
   background: tomato;
   /* Safari */
   color: white;
 }
 
-/* line 42, ../compass/sass/aaltosulku.scss */
+/* line 49, ../compass/sass/aaltosulku.scss */
 ::-moz-selection {
   background: tomato;
   /* Firefox */
   color: white;
 }
 
-/* line 48, ../compass/sass/aaltosulku.scss */
+/* line 55, ../compass/sass/aaltosulku.scss */
 nav {
   text-align: center;
 }
 
-/* line 53, ../compass/sass/aaltosulku.scss */
+/* line 60, ../compass/sass/aaltosulku.scss */
 nav ul li {
   display: inline-block;
   text-align: center;
@@ -54,7 +60,7 @@ nav ul li {
   margin: auto;
 }
 
-/* line 61, ../compass/sass/aaltosulku.scss */
+/* line 68, ../compass/sass/aaltosulku.scss */
 nav ul {
   margin: auto;
   display: inline-block;
@@ -65,23 +71,23 @@ nav ul {
   float: right;
 }
 
-/* line 71, ../compass/sass/aaltosulku.scss */
+/* line 78, ../compass/sass/aaltosulku.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 77, ../compass/sass/aaltosulku.scss */
+/* line 84, ../compass/sass/aaltosulku.scss */
 .p-footer {
   text-align: left;
   font-size: 70%;
 }
 
-/* line 82, ../compass/sass/aaltosulku.scss */
+/* line 89, ../compass/sass/aaltosulku.scss */
 a {
   color: tomato;
 }
 
-/* line 87, ../compass/sass/aaltosulku.scss */
+/* line 94, ../compass/sass/aaltosulku.scss */
 footer {
   background-color: rgba(0, 0, 0, 0.05);
   height: 200px;
@@ -91,18 +97,18 @@ footer {
   position: relative;
 }
 
-/* line 97, ../compass/sass/aaltosulku.scss */
+/* line 104, ../compass/sass/aaltosulku.scss */
 header {
   height: 100px;
 }
 
-/* line 104, ../compass/sass/aaltosulku.scss */
+/* line 111, ../compass/sass/aaltosulku.scss */
 .content-container {
   min-height: 100%;
   margin-bottom: -200px;
 }
 
-/* line 110, ../compass/sass/aaltosulku.scss */
+/* line 117, ../compass/sass/aaltosulku.scss */
 .page-content:after {
   content: "";
   display: block;
