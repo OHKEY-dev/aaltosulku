@@ -27,12 +27,10 @@ layout: default
 	<div class="rivi">
 		<div class="ruutu-12-tablet">
 			<div class="cat-main">
-				
 				<div class="cat-sub">
 						{% for post in posts %}
 					<div class="cat-sub-title" name="{{ category | first }}"><h6>{{ post.subject | capitalize  }}</h6></div>
 					<div class="cat-sub-content">
-
 						{% if post.title != null %}
 						<div class="sub-title">
 							<div class="sub-title-mark"></div>
@@ -40,7 +38,6 @@ layout: default
 						</div>
 						{% endif %}
 						{% endfor %}
-				
 					</div>
 				</div>
 			</div>
