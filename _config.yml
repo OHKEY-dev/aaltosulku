@@ -35,3 +35,8 @@ prose:
           element: "text"
           label: "Otsikko"
           value: ""
+      - name: "description"
+        field:
+          element: "text"
+          label: "Kuvaus"
+          value: ""
