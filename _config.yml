@@ -1,7 +1,7 @@
 name: aaltosulku
 baseurl: /aaltosulku
 permalink: none
-pygments: true
+highlighter: true
 prose:
   rooturl: '_posts'
   siteurl: 'http://OHKEY-dev.github.io/aaltosulku'
@@ -23,13 +23,13 @@ prose:
           label: "Kategoria"
           options:
             - name: "Git"
-              value: "Git"
+              value: "git"
             - name: "Eclipse"
-              value: "Eclipse"
+              value: "eclipse"
             - name: "Jekyll"
-              value: "Jekyll"
+              value: "jekyll"
             - name: "Sublime Text"
-              value: "Sublime Text"
+              value: "sublime text"
       - name: "title"
         field:
           element: "text"

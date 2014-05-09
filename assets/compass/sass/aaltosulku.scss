@@ -201,6 +201,10 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	width:85%;
 }
 
+.cat-sub-title {
+	text-transform: capitalize;
+}
+
 .cat-main-title {
 	margin-bottom:8%;
 	font-size:155%;
@@ -235,6 +239,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	list-style: none;
 	transition: padding-left 0.5s;
 	font-size:90%;
+	text-transform: capitalize;
 }
 
 
