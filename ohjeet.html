@@ -2,6 +2,12 @@
 layout: default
 ---
 
+<div class="rivi">
+	<div class="ruutu-12-tablet">
+		<a href="#" id="pull"> Sisällysluettelo </a>
+	</div>
+</div>
+
 <div id="header-line2"></div>
 <div class="rivi">
 	<div class="ruutu-12-tablet">
@@ -10,10 +16,12 @@ layout: default
 				<div class="toc-title">
 					<h5>Sisällysluettelo</h5>
 				</div>
-				<ul class="toc-ul nav">
+				<ul class="toc-ul nav clearfix">
 				</ul>
+
 			</div>
 		</div>
+
 		<div class="ruutu-10-tablet">
 			{% for category in site.categories %}
 			{% if category contains "git" or category contains "eclipse" or category contains "jekyll" or category contains "sublime text"%}
@@ -46,6 +54,7 @@ layout: default
 		</div><!-- .ruutu-10-tablet -->
 	</div><!-- .ruutu-12-tablet -->
 </div>
+
 
 
 

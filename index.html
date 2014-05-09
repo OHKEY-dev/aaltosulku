@@ -15,10 +15,10 @@ layout: default
 		<div class="ruutu-12-tablet">
 			<h1>Viimeisimmät</h1>
 			{% for post in site.posts limit:3 %}
-			<a href="{{ site.baseurl }}{{ post.url }}" class="recent">
-			<div class="ruutu-4-tablet" style="min-height:220px;">
+			<a href="{{ site.baseurl }}{{ post.url }}" class="viimeisimmat">
+			<div class="ruutu-4-tablet">
 				<h4>{{ post.title }}</h4>
-				<p>  <div class="asd" style="font-size:80%;font-weight:700;">{{ post.description }} </div></p>
+			  <div class="kuvaus">{{ post.description }} </div>
 			</div>
 		</a>
 		{% endfor %}

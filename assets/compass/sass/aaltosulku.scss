@@ -187,9 +187,8 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	border-top: 10px solid white;
 	border-bottom: 11px solid white; 
 	border-left:11px solid transparent; 
-	
-}
 
+}
 
 
 
@@ -227,16 +226,6 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 }
 
-.cat-title-mark:before {
-	content:"";
-	float:left;
-}
-.cat-title-mark:after {
-	content:"";
-	float:right;
-}
-
-
 
 .toc-ul li {
 	list-style: none;
@@ -256,9 +245,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	a {
 		font-weight:bold;
 		font-size:115%;
-
 	}
-
 	color:$bg;
 }
 
@@ -322,11 +309,99 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 
-.recent {
+.viimeisimmat {
 	color:rgba(68,68,68,0.9);
 
+	.kuvaus {
+		font-size:80%;
+		font-weight:700;
+	}
+
+	.ruutu-4-tablet{
+		min-height:220px;
+	}
 }
 
-.recent:hover {
+.viimeisimmat:hover {
 	color:white;
 }
+
+
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+#pull {
+	display: none;  
+	color:$lindeman-text-color;
+	font-size: 18px;
+	outline:0;
+	width:100%;
+	font-weight: bolder;
+	margin-left:6%;
+
+
+	
+}
+
+
+
+
+@media only screen and (max-width : 790px) {  
+	.toc-title {
+		display:none;
+		height:auto;
+	}
+	.toc-ul {
+		@extend .toc-title;
+		position:relative;
+		margin-left:4%;
+
+		li a{
+			width:100%;
+		}
+	}
+
+	#toc {
+		position:relative;
+	}
+
+	#pull {  
+		display: block;   
+		width: 100%;  
+		position: relative;
+		background-color:tomato;
+		color:white;
+		padding:2px;
+	}  
+
+	.active {
+		background-color:transparent;
+		color:$link;
+	
+		padding:0px;
+
+		a {
+			color:$link;
+			padding:0px;
+			text-shadow:none;
+		}
+	}
+
+	.active:after{
+		display:none;
+	}
+}  
+
+
+
