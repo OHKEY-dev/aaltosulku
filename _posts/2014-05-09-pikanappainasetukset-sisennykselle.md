@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Pikanappainasetukset sisennykselle
+title: Pikanäppäinasetukset sisennykselle
 category: Sublime Text
 ---
 
