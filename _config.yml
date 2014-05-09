@@ -23,13 +23,13 @@ prose:
           label: "Kategoria"
           options:
             - name: "Git"
-              value: "git"
+              value: "Git"
             - name: "Eclipse"
-              value: "eclipse"
+              value: "Eclipse"
             - name: "Jekyll"
-              value: "jekyll"
+              value: "Jekyll"
             - name: "Sublime Text"
-              value: "sublimetext"
+              value: "Sublime Text"
       - name: "title"
         field:
           element: "text"
