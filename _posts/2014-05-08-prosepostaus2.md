@@ -2,7 +2,6 @@
 layout: post
 published: true
 title: ProsePostaus2
-subject: guide
 category: Android
 ---
 
