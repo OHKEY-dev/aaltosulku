@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Eclipsen whitespace
-category: git
+category: eclipse
 ---
 
 Tällä ohjeella saadaan aikaiseksi Eclipsen tekstieditorissa whitespace: tab-painalluksista välilyönteihin.
