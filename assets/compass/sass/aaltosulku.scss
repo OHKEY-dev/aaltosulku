@@ -61,6 +61,10 @@ nav ul li {
 	float:left;
 	padding:2px 5px;
 	margin: auto;
+
+	a:hover {
+		
+	}
 }
 
 nav ul{
@@ -316,4 +320,14 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	background-color:$bg + 10;
 	color:white;
 
+}
+
+
+.recent {
+	color:rgba(68,68,68,0.9);
+
+}
+
+.recent:hover {
+	color:white;
 }

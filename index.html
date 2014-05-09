@@ -14,19 +14,17 @@ layout: default
 	<div class="rivi">
 		<div class="ruutu-12-tablet">
 			<h1>Viimeisimmät</h1>
-			<div class="ruutu-4-tablet">
-				<h4>Git aloitusopas!</h4>
-				<p> Aaltosulun yhteisö on koonnut yhtenäisen paketin, josta jokainen voi helposti aloittaa oman tietosäilön ylläpitämisen koodilleen! </p>
-			</div><!-- ensimmäinen .ruutu-4-talbet -->
-			<div class="ruutu-4-tablet">
-				<h4>Git aloitusopas!</h4>
-				<p> Aaltosulun yhteisö on koonnut yhtenäisen paketin, josta jokainen voi helposti aloittaa oman tietosäilön ylläpitämisen koodilleen! </p>
-			</div><!-- toka .ruutu-4-talbet -->
-			<div class="ruutu-4-tablet">
-				<h4>Git aloitusopas!</h4>
-				<p> Aaltosulun yhteisö on koonnut yhtenäisen paketin, josta jokainen voi helposti aloittaa oman tietosäilön ylläpitämisen koodilleen! </p>
-			</div><!-- kolmas .ruutu-4-talbet -->
+			{% for post in site.posts limit:3 %}
+			<a href="{{ site.baseurl }}{{ post.url }}" class="recent">
+			<div class="ruutu-4-tablet" style="min-height:220px;">
+				<h4>{{ post.title }}</h4>
+				<p>  <div class="asd" style="font-size:80%;font-weight:700;">{{ post.content | truncatewords: 20 }} </div></p>
+			</div>
+		</a>
+		{% endfor %}
+		<div class="rivi">
 			<h6 style="float:right;"><a href="ohjeet.html">Lisää..</a></h6>
+		</div>
 		</div><!-- .ruutu-12-tablet -->
 	</div><!-- .rivi -->
 
