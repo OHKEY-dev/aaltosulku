@@ -164,57 +164,57 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   content: "";
   color: white;
   float: right;
-  border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  border-right: 11px solid white;
+  border-top: 10px solid white;
+  border-bottom: 11px solid white;
+  border-left: 11px solid transparent;
 }
 
 /** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
 /** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
-/* line 202, ../compass/sass/aaltosulku.scss */
+/* line 201, ../compass/sass/aaltosulku.scss */
 .cat-sub {
   margin-left: 1.5%;
   margin-bottom: 7%;
   width: 85%;
 }
 
-/* line 208, ../compass/sass/aaltosulku.scss */
+/* line 207, ../compass/sass/aaltosulku.scss */
 .cat-sub-title {
   text-transform: capitalize;
 }
 
-/* line 212, ../compass/sass/aaltosulku.scss */
+/* line 211, ../compass/sass/aaltosulku.scss */
 .cat-main-title {
   margin-bottom: 8%;
   font-size: 155%;
 }
 
-/* line 217, ../compass/sass/aaltosulku.scss */
+/* line 216, ../compass/sass/aaltosulku.scss */
 .sub-title {
   margin-bottom: 1%;
   cursor: pointer;
 }
 
-/* line 223, ../compass/sass/aaltosulku.scss */
+/* line 222, ../compass/sass/aaltosulku.scss */
 .sub-title-mark {
   margin-right: 1px;
   color: tomato;
   float: left;
 }
 
-/* line 231, ../compass/sass/aaltosulku.scss */
+/* line 230, ../compass/sass/aaltosulku.scss */
 .cat-title-mark:before {
   content: "";
   float: left;
 }
 
-/* line 235, ../compass/sass/aaltosulku.scss */
+/* line 234, ../compass/sass/aaltosulku.scss */
 .cat-title-mark:after {
   content: "";
   float: right;
 }
 
-/* line 242, ../compass/sass/aaltosulku.scss */
+/* line 241, ../compass/sass/aaltosulku.scss */
 .toc-ul li {
   list-style: none;
   transition: padding-left 0.5s;
@@ -222,22 +222,22 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   text-transform: capitalize;
 }
 
-/* line 251, ../compass/sass/aaltosulku.scss */
+/* line 250, ../compass/sass/aaltosulku.scss */
 .list-group-item {
   color: tomato;
 }
 
-/* line 255, ../compass/sass/aaltosulku.scss */
+/* line 254, ../compass/sass/aaltosulku.scss */
 .list-group-item-heading {
   color: tomato;
 }
-/* line 257, ../compass/sass/aaltosulku.scss */
+/* line 256, ../compass/sass/aaltosulku.scss */
 .list-group-item-heading a {
   font-weight: bold;
   font-size: 115%;
 }
 
-/* line 266, ../compass/sass/aaltosulku.scss */
+/* line 265, ../compass/sass/aaltosulku.scss */
 .content-container div:target {
   animation-duration: 1.2s;
   -moz-animation-duration: 1.2s;
@@ -248,52 +248,52 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 @-moz-keyframes in-out {
-  /* line 277, ../compass/sass/aaltosulku.scss */
+  /* line 276, ../compass/sass/aaltosulku.scss */
   from {
     color: tomato;
   }
 }
 
 @-webkit-keyframes in-out {
-  /* line 286, ../compass/sass/aaltosulku.scss */
+  /* line 285, ../compass/sass/aaltosulku.scss */
   from {
     color: tomato;
   }
 }
 
 @keyframes in-out {
-  /* line 295, ../compass/sass/aaltosulku.scss */
+  /* line 294, ../compass/sass/aaltosulku.scss */
   from {
     color: tomato;
   }
 }
 
-/* line 304, ../compass/sass/aaltosulku.scss */
+/* line 303, ../compass/sass/aaltosulku.scss */
 .sub-title-mark:before {
   content: "{}";
   font-weight: bold;
 }
 
-/* line 311, ../compass/sass/aaltosulku.scss */
+/* line 310, ../compass/sass/aaltosulku.scss */
 .intro {
   background-color: white;
   color: #444444;
   font-size: 125%;
 }
 
-/* line 318, ../compass/sass/aaltosulku.scss */
+/* line 317, ../compass/sass/aaltosulku.scss */
 .ruutu-4-tablet:hover {
   border-right: #050000;
   background-color: #ff6d51;
   color: white;
 }
 
-/* line 326, ../compass/sass/aaltosulku.scss */
+/* line 325, ../compass/sass/aaltosulku.scss */
 .recent {
   color: rgba(68, 68, 68, 0.9);
 }
 
-/* line 331, ../compass/sass/aaltosulku.scss */
+/* line 330, ../compass/sass/aaltosulku.scss */
 .recent:hover {
   color: white;
 }
