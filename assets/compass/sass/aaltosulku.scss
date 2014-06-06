@@ -22,6 +22,8 @@ $right: 5px solid rgba(105,165,164,0.7);
 $body: rgba(229,234,164,0.2);
 $footer: rgba(0,0,0,0.05);
 
+
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	//background-color:rgba(240,240,216,1);
@@ -95,8 +97,12 @@ a {
 
 footer {
 	background-color:$footer;
-	height:200px;
+	height:auto;
 	width:100%;
+	overflow:auto;
+	clear:both;
+
+
 
 }
 
@@ -108,8 +114,8 @@ header {
 }
 
 .content-container {
-	min-height: 100%;
-	margin-bottom:-200px;
+	//height: 100%;
+
 	
 }
 
@@ -385,7 +391,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	.active {
 		background-color:transparent;
 		color:$link;
-	
+
 		padding:0px;
 
 		a {
