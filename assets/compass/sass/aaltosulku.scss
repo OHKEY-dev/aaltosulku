@@ -97,9 +97,6 @@ footer {
 	background-color:$footer;
 	height:200px;
 	width:100%;
-	margin-top:-200px;
-	clear:both;
-	position:relative;
 
 }
 
@@ -401,6 +398,8 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	.active:after{
 		display:none;
 	}
+
+
 }  
 
 
