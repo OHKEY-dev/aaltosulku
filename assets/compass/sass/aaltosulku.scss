@@ -175,7 +175,10 @@ liitoksissa oleva divi on käyttäjän ikkunassa näkyvillä **/
 		color:rgba(255,255,255,1);
 		text-shadow: 0 1px $bg - 50;
 		padding-right:3px;
+
+		
 	}
+
 
 }
 
@@ -189,7 +192,9 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 	border-top: 10px solid white;
 	border-bottom: 11px solid white; 
-	border-left:11px solid transparent; 
+	border-left:11px solid transparent;
+
+
 
 }
 
@@ -208,6 +213,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 .cat-sub-title {
 	text-transform: capitalize;
+	font-size:220%;
 }
 
 .cat-main-title {
@@ -253,9 +259,9 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 .content-container div:target{
-	animation-duration:1.2s;
-	-moz-animation-duration:1.2s;
-	-webkit-animation-duration:1.2s;
+	animation-duration:0.8s;
+	-moz-animation-duration:0.4s;
+	-webkit-animation-duration:0.8s;
 	animation-name:in-out;
 	-moz-animation-name:in-out;
 	-webkit-animation-name:in-out;
@@ -288,6 +294,37 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 	}
 }
+
+
+
+
+@-moz-keyframes toc-in-out {
+	from {
+		padding-right:10px;
+	}
+	to {
+		padding-right:0;
+	}
+}
+
+@-webkit-keyframes toc-in-out {
+	from {
+		padding-right:10px;
+	}
+	to {
+		padding-right:0;
+	}
+}
+
+@keyframes toc-in-out {
+	from {
+		padding-right:10px;
+	}
+	to {
+		padding-right:0;
+	}
+}
+
 
 
 .sub-title-mark:before {
@@ -403,6 +440,10 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 	.active:after{
 		display:none;
+	}
+
+	.cat-sub-title{
+		font-size:150%;
 	}
 
 
