@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<!--
 <div class="rivi">
 	<div class="ruutu-12-tablet">
 		<a href="#" id="pull"> Sisällysluettelo </a>
@@ -20,9 +20,9 @@ layout: default
 				</ul>
 
 			</div>
-		</div>
+		</div>-->
 
-		<div class="ruutu-10-tablet">
+		<div class="ruutu-12-tablet">
 			{% for category in site.categories %}
 			{% if category contains "git" or category contains "eclipse" or category contains "jekyll" or category contains "sublime text"%}
 			<section>
@@ -35,25 +35,26 @@ layout: default
 									{% for posts in category %}
 									{% for post in posts %}
 									{% if post.title != null %}
-									<div class="sub-title">
-										<div class="sub-title-mark"></div>
-										<div class="rivi"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | camelcase }}</a></div>
+									<a href="{{ site.baseurl }}{{ post.url }}">
+										<div class="laatikko">
+											<h4 class="laatikko-title">{{ post.title }}</h4>
+											<div class="laatikko-kuvaus">{{ post.description }} </div>
+										</div></a>
+										{% endif %}
+										{% endfor %}
+										{% endfor %}
 									</div>
-									{% endif %}
-									{% endfor %}
-									{% endfor %}
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			{% endif %}
-			{% endfor %}
-			<div class="footer-top"></div>
-		</div><!-- .ruutu-10-tablet -->
-	</div><!-- .ruutu-12-tablet -->
-</div>
+				</section>
+				{% endif %}
+				{% endfor %}
+				<div class="footer-top"></div>
+			</div><!-- .ruutu-10-tablet -->
+		</div><!-- .ruutu-12-tablet -->
+	</div>
 
 
 

@@ -14,16 +14,13 @@ layout: default
 <div class="rivi" style="clear:both;margin:auto;">
 	<div class="ruutu-12-tablet">
 		<h1>Viimeisimmät</h1>
-		{% capture currentmonth %}{{post.date | date: "%M"}}{% endcapture %}
 		{% for post in site.posts limit:3 %}
-		{% if currentmonth != month %}
 		<a href="{{ site.baseurl }}{{ post.url }}" class="viimeisimmat">
 			<div class="ruutu-4-tablet">
 				<h4>{{ post.title }}</h4>
 				<div class="kuvaus">{{ post.description }} </div>
 			</div>
 		</a>
-		{% endif %}
 		{% endfor %}
 		<div class="rivi">
 			<div class="ruutu-12-tablet">

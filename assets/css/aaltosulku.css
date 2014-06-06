@@ -99,7 +99,7 @@ header {
   height: 100px;
 }
 
-/* line 122, ../compass/sass/aaltosulku.scss */
+/* line 120, ../compass/sass/aaltosulku.scss */
 .page-content:after {
   content: "";
   display: block;
@@ -107,15 +107,15 @@ header {
 }
 
 /** Ohjeet.html **/
-/* line 139, ../compass/sass/aaltosulku.scss */
+/* line 138, ../compass/sass/aaltosulku.scss */
 #toc .toc-title {
   font-size: 90%;
 }
 
-/* line 144, ../compass/sass/aaltosulku.scss */
+/* line 143, ../compass/sass/aaltosulku.scss */
 section {
   border: none;
-  margin-bottom: 5%;
+  padding: 0;
 }
 
 /* line 149, ../compass/sass/aaltosulku.scss */
@@ -123,12 +123,10 @@ section {
   padding-bottom: 0;
 }
 
-/* line 154, ../compass/sass/aaltosulku.scss */
-.footer-top {
-  margin-top: 60%;
-  width: 100%;
-}
-
+/*.footer-top {
+	margin-top:60%;
+	width:100%;
+	}*/
 /* line 160, ../compass/sass/aaltosulku.scss */
 .affix {
   position: fixed;
@@ -406,4 +404,21 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
   .cat-sub-title {
     font-size: 150%;
   }
+}
+/* line 452, ../compass/sass/aaltosulku.scss */
+.laatikko {
+  float: left;
+  position: relative;
+  padding: 15px;
+  margin-right: 15px;
+  width: 265px;
+  height: 260px;
+  overflow: hidden;
+}
+
+/* line 463, ../compass/sass/aaltosulku.scss */
+.laatikko:hover {
+  border-right: #050000;
+  background-color: #ff6d51;
+  color: white;
 }
