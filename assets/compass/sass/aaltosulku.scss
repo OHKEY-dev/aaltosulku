@@ -236,14 +236,33 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 
-.toc-ul li {
-	list-style: none;
-	transition: padding-left 0.5s;
-	font-size:90%;
-	text-transform: capitalize;
+.toc-title{
+	@extend .cat-sub-title;
+	
 }
 
 
+.toc-ul {
+	padding:15px 0px 15px 1px;
+	background-color:rgba($lindeman-text-color, 0.04);
+	max-width:320px;
+	overflow:hidden;
+	
+	li {
+		list-style: none;
+		padding:1px;
+		text-transform: capitalize;
+		margin-bottom:2px;
+
+	}
+
+
+}
+
+
+.toc-ul li:hover{
+	
+}
 
 .list-group-item {
 	color:$bg;
@@ -259,9 +278,9 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 }
 
 .content-container div:target{
-	animation-duration:0.8s;
-	-moz-animation-duration:0.4s;
-	-webkit-animation-duration:0.8s;
+	animation-duration:1.6s;
+	-moz-animation-duration:1.6s;
+	-webkit-animation-duration:1.26;
 	animation-name:in-out;
 	-moz-animation-name:in-out;
 	-webkit-animation-name:in-out;
@@ -398,6 +417,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 
 @media only screen and (max-width : 790px) {  
+	/*
 	.toc-title {
 		display:none;
 		height:auto;
@@ -446,7 +466,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 		font-size:150%;
 	}
 
-
+*/
 }  
 
 .laatikko{
@@ -466,4 +486,16 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	color:white;
 }
 
+#scrolltop{
+	
+	width:110px;
+	height:110px;
+	bottom:0;
+	right:0;
+	position:fixed;
+}
 
+#scrolltop:hover{
+	background-color:rgba(220,220,220,0.4);
+	cursor:pointer;
+}
