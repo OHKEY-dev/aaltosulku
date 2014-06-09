@@ -2,7 +2,7 @@
 		$(function(){
 			//var mainId = 0;
 			//var subId = 0;
-			var number = -1;
+			var number = 0;
 			$(".cat-main").each(function(){
 				//mainId = mainId+1;
 				//$(this).attr("id","cat-main-num-"+mainId);
