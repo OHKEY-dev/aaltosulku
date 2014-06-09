@@ -1,9 +1,33 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+	<header>
+		<div class="rivi">
+			<div class="ruutu-12-talbet">
+	 <a href="index.html" style="vertical-align:middle;"><img src="{{ site.baseurl }}/assets/media/aaltosulku_logo1.svg" alt="aaltosulku.svg" style="width:220px;height:auto;float:left;" /></a> 
+				
+				<nav>
+					<ul style="color:white;" class="nav">
+						<li><a href="{{ site.baseurl }}/index.html">Etusivu</a></li>
+						<li><a href="{{ site.baseurl }}/ohjeet.html">Ohjeet</a></li>
+						<li><a href="{{ site.baseurl }}/yhteiso.html">Yhteisö</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>	
+	</header>
+	<body>
+	<div class="content-container">
+<div class="rivi">
+	<div class="ruutu-12-tablet">
+		<h2>{{ page.title }}</h2>
+		<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post" style="padding-bottom:37%">
-	{{ content }}
+		<div class="post" style="padding-bottom:37%">
+			{{ content }}
+		</div>
+	</div>
 </div>
+</div>
+</body>
+{% include footer.html %}

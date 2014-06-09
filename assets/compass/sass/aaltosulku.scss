@@ -27,8 +27,6 @@ $footer: rgba(0,0,0,0.05);
 body {
 	font-family: 'Open Sans', sans-serif;
 	//background-color:rgba(240,240,216,1);
-	background-color: white;
-	border-top:15px solid $decoration-line;
 	/**seuraavat muutokset tehty: http://www.cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/ mukaan **/
 	margin:0;
 	padding:0;
@@ -101,17 +99,30 @@ footer {
 	width:100%;
 	overflow:auto;
 	clear:both;
+	margin-top:3.5%;
 
 
 
 }
 
 header {
-	height:100px;
-	//background-color:rgba(52, 48, 45,0.1);
-	//color:white;
+	min-height:80px;
+	
+	//background-color:$bg;	
+//background-color:rgba($lindeman-text-color,0.01);
+background-color:white;
 
+img{
+	vertical-align:bottom;
+	padding:5px;
 }
+
+a{	padding:5px;
+	vertical-align: bottom;
+}
+}
+
+
 
 .content-container {
 	
@@ -146,9 +157,6 @@ section {
 	padding:0;
 }
 
-.ruutu-12-tablet {
-	padding-bottom:0;
-}
 
 //Tällä tehdään tyhjää tilaa ohjeluettelon alle, jotta scrollspy toimii mukavasti
 /*.footer-top {
@@ -200,20 +208,17 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 
 
-/** nämä margin-leftit ovat vain tuodakseen sisennysilmettä aliotsikoidihn - voi poistella jos halajaa **/
-/** cat-subin ja cat-main-title padding-bottomit ovat vain scrollspyn testaamiseen - voi poistella jos halajaa**/
-.cat-sub-toc {
-	//margin-left:5.5%;
-}
+
 .cat-sub {
-	margin-left:1.5%;
-	margin-bottom:7%;
-	width:85%;
+	
+	
 }
 
 .cat-sub-title {
 	text-transform: capitalize;
 	font-size:220%;
+	color: rgba($lindeman-text-color,0.2);
+
 }
 
 .cat-main-title {
@@ -235,6 +240,11 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 }
 
+.cat-sub-content{
+
+
+}
+
 
 .toc-title{
 	@extend .cat-sub-title;
@@ -243,6 +253,8 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 
 .toc-ul {
+
+	border-top:4px solid rgba($bg,0.8);
 	padding:15px 0px 15px 1px;
 	background-color:rgba($lindeman-text-color, 0.04);
 	max-width:320px;
@@ -250,9 +262,10 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	
 	li {
 		list-style: none;
-		padding:1px;
+		padding-left:15px;
 		text-transform: capitalize;
 		margin-bottom:2px;
+		font-size: 125%;
 
 	}
 
@@ -261,7 +274,7 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 
 .toc-ul li:hover{
-	
+	font-weight:bold;
 }
 
 .list-group-item {
@@ -354,24 +367,31 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 
 
 .intro {
-	background-color:white;
+	//background-color:rgba($lindeman-text-color,0.01);
+	background-color:$bg;
 	color:$lindeman-text-color;
 	font-size:125%;
-
+	color:white;
+	height:450px;
 }
 
+/*
 .ruutu-4-tablet:hover{
 	border-right: $decoration-line - 250;
 	background-color:$bg + 10;
 	color:white;
 
 }
-
+/*
 
 .viimeisimmat {
-	color:rgba(68,68,68,0.9);
+border:1px solid red;
+background-color:red;
+color:$lindeman-text-color;
+
 
 	.kuvaus {
+
 		font-size:80%;
 		font-weight:700;
 	}
@@ -384,6 +404,9 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 .viimeisimmat:hover {
 	color:white;
 }
+*/
+
+
 
 
 
@@ -459,32 +482,97 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	}
 
 	.active:after{
-		display:none;
+c		display:none;
 	}
 
 	.cat-sub-title{
 		font-size:150%;
 	}
 
-*/
+	*/
 }  
 
 .laatikko{
-	float: left;
+	background-color:rgba($lindeman-text-color, 0.04);
+	color:$lindeman-text-color;
+	//float:left;
+
+	margin-right:1%;
+	margin-bottom:1%;
+
+
+	float:left;
+	position:relative;
+	
+	width:280px;
+	height:225px;
+	overflow:hidden;
+	padding:20px;
+	border-top:4px solid rgba($bg,0.8);
+
+	/*float: left;
 	position: relative;
 	padding:15px;
 	margin-right:15px;
 	width:345px;
 	height:225px;
-
-	overflow:hidden;
+	color:$lindeman-text-color;
+	overflow:hidden;*/
 }
 
 .laatikko:hover{
-	border-right: $decoration-line - 250;
-	background-color:$bg + 10;
+	//border-top:4px solid rgba($lindeman-text-color,0.8);
+	//background-color: $bg + 10;
+	background-color:rgba($bg,0.8);
+	border-top:4px solid rgba(0,0,0,0);
 	color:white;
+	
 }
+
+
+.laatikko-latest{
+	background-color:rgba($lindeman-text-color, 0.04);
+	color:$lindeman-text-color;
+	//float:left;
+.ruutu-4-tablet{
+	background-color:rgba($lindeman-text-color, 0.04);
+	color:$lindeman-text-color;
+
+	margin-right:1%;
+	margin-bottom:1%;
+
+	border-top:4px solid rgba($bg,0.8);
+	float:left;
+	position:relative;
+	
+	max-width:370px;
+	height:225px;
+	overflow:hidden;
+	padding:20px;
+}
+
+
+	/*float: left;
+	position: relative;
+	padding:15px;
+	margin-right:15px;
+	width:345px;
+	height:225px;
+	color:$lindeman-text-color;
+	overflow:hidden;*/
+}
+
+.laatikko-latest .ruutu-4-tablet:hover{
+	//border-top:4px solid rgba($lindeman-text-color,0.8);
+	//background-color: $bg + 10;
+	background-color:rgba($bg,1);
+	border-top:4px solid rgba(0,0,0,0);
+	color:white;
+	
+}
+
+
+
 
 #scrolltop{
 	
@@ -493,9 +581,54 @@ Isokokoisille listaitemeille se aiheuttaa ikävän rivivaihdon */
 	bottom:0;
 	right:0;
 	position:fixed;
+	z-index:1;
 }
 
 #scrolltop:hover{
 	background-color:rgba(220,220,220,0.4);
 	cursor:pointer;
 }
+
+
+.inner-container{
+	background-color:rgba(255,255,255,1);
+	//border:1px dashed tomato;
+}
+
+
+.nav{
+
+	ul{
+
+	}
+
+	li {
+		margin-top:-15px;
+		padding:15px;
+		
+		position:relative;
+		
+	}
+}
+
+
+.ohjeet-header{
+	background-color:$bg;
+	color:white;
+
+	a{
+		color:white;	 
+	}
+}
+
+header .aktiivinen	{
+	//border-bottom:2px solid rgba($lindeman-text-color, 0.04);
+	//background-color:	 rgba($lindeman-text-color, 0.04);
+	//border-top:2px solid rgba($bg,1);
+	color: rgba($lindeman-text-color,0.4);
+}
+
+header a:hover{
+	@extend .aktiivinen; 	
+}
+

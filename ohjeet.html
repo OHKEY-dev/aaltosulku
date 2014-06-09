@@ -22,59 +22,81 @@ layout: default
 			</div>
 		</div>-->
 
-		<div class="ruutu-12-tablet">
-			<section>
-				<div class="rivi">
-					<div class="ruutu-12-tablet">
-						<div class="cat-main">
-							<div class="cat-sub">
-								<div class="toc-title"><h6>Sisällysluettelo</h6></div>
-								<div class="cat-sub-content">
+		<header class="ohjeet-header">
+			<div class="rivi">
+				<div class="ruutu-12-talbet">
+					<a href="index.html" style="vertical-align:middle;"><img src="{{ site.baseurl }}/assets/media/aaltosulku_logo1.svg" alt="aaltosulku.svg" style="width:220px;height:auto;float:left;" /></a> 
 
-									<ul class="toc-ul">
-
-									</ul>
-
-								</div>
-							</div>
-						</div>
-					</div>
+					<nav>
+						<ul class="nav">
+							<li><a href="{{ site.baseurl }}/index.html">Etusivu</a></li>
+							<li><a   class="aktiivinen" href="{{ site.baseurl }}/ohjeet.html">Ohjeet</a></li>
+							<li><a href="{{ site.baseurl }}/yhteiso.html">Yhteisö</a></li>
+						</ul>
+					</nav>
 				</div>
+			</div>
+
+		</header>
+		<body>
+			<div class="content-container">
+
+				<div class="ruutu-12-tablet inner-container">
+					<section>
+						<div class="rivi">
+							<div class="ruutu-12-tablet">
+								<div class="cat-main">
+									<div class="cat-sub">
+										<div class="toc-title"><h6>Sisällysluettelo</h6></div>
 
 
-			</section>
-			{% for category in site.categories %}
-			{% if category contains "git" or category contains "eclipse" or category contains "jekyll" or category contains "sublime text"%}
-			<section>
-				<div class="rivi">
-					<div class="ruutu-12-tablet">
-						<div class="cat-main">
-							<div class="cat-sub">
-								<div class="cat-sub-title"><h6>{{ category | first | capitalize }}</h6></div>
-								<div class="cat-sub-content">
-									{% for posts in category %}
-									{% for post in posts %}
-									{% if post.title != null %}
-									<a href="{{ site.baseurl }}{{ post.url }}">
-										<div class="laatikko">
-											<h4 class="laatikko-title">{{ post.title }}</h4>
-											<div class="laatikko-kuvaus">{{ post.description }} </div>
-										</div></a>
-										{% endif %}
-										{% endfor %}
-										{% endfor %}
+										<ul class="toc-ul">
+
+										</ul>
+
+
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</section>
-				{% endif %}
-				{% endfor %}
-				<div class="footer-top"></div>
-				<div id="scrolltop"><img src="assets/media/uparrow.svg" alt="up"></div>
-			</div><!-- .ruutu-12-tablet -->
 
+
+					</section>
+					{% for category in site.categories %}
+					{% if category contains "git" or category contains "eclipse" or category contains "jekyll" or category contains "sublime text"%}
+					<section>
+						<div class="rivi">
+							<div class="ruutu-12-tablet">
+								<div class="cat-main">
+									<div class="cat-sub">
+										<div class="cat-sub-title"><h6>{{ category | first | capitalize }}</h6></div>
+
+										<div class="rivi cat-sub-content">
+
+											{% for posts in category %}
+											{% for post in posts %}
+											{% if post.title != null %}
+											<a href="{{ site.baseurl }}{{ post.url }}" class="laatikko">
+												<h4 class="laatikko-title">{{ post.title }}</h4>
+												<div class="laatikko-kuvaus">{{ post.description }} </div>
+											</a>
+											{% endif %}
+											{% endfor %}
+											{% endfor %}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					{% endif %}
+					{% endfor %}
+					<div class="footer-top"></div>
+					<div id="scrolltop"><img src="assets/media/uparrow.svg" alt="up"></div>
+				</div><!-- .ruutu-12-tablet -->
+			</div>
+		</body>
+		{% include footer.html %}
 
 
 

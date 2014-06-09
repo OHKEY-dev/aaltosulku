@@ -2,6 +2,26 @@
 layout: default
 ---
 
+
+	<header>
+		<div class="rivi">
+			<div class="ruutu-12-talbet">
+	 <a href="index.html" style="vertical-align:middle;"><img src="{{ site.baseurl }}/assets/media/aaltosulku_logo1.svg" alt="aaltosulku.svg" style="width:220px;height:auto;float:left;" /></a> 
+				
+				<nav>
+					<ul style="color:white;" class="nav">
+						<li><a href="{{ site.baseurl }}/index.html" class="aktiivinen">Etusivu</a></li>
+						<li><a href="{{ site.baseurl }}/ohjeet.html">Ohjeet</a></li>
+						<li><a href="{{ site.baseurl }}/yhteiso.html">Yhteisö</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+	</header>
+<body>
+	<div class="content-container">
+
 <div class="intro">
 	<div class="rivi">
 		<div class="ruutu-12-tablet">
@@ -15,19 +35,32 @@ layout: default
 	<div class="ruutu-12-tablet">
 		<h1>Viimeisimmät</h1>
 		{% for post in site.posts limit:3 %}
-		<a href="{{ site.baseurl }}{{ post.url }}" class="viimeisimmat">
-			<div class="ruutu-4-tablet">
+
+		<!--<div class="ruutu-4-tablet" >
+			<a href="{{ site.baseurl }}{{ post.url }}" >
 				<h4>{{ post.title }}</h4>
 				<div class="kuvaus">{{ post.description }} </div>
-			</div>
-		</a>
-		{% endfor %}
-		<div class="rivi">
-			<div class="ruutu-12-tablet">
-				<h6 style="float:right;" ><a href="ohjeet.html">Lisää..</a></h6>
-			</div>
+
+			</a>
 		</div>
-	</div><!-- .ruutu-12-tablet -->
+-->
+
+	<a href="{{ site.baseurl }}{{ post.url }}" class="laatikko-latest" style="">
+		<div class="ruutu-4-tablet">
+		<h4 class="laatikko-title">{{ post.title }}</h4>
+		<div class="laatikko-kuvaus">{{ post.description }} </div>
+		</div>
+	</a>
+
+{% endfor %}
+<div class="rivi">
+	<div class="ruutu-12-tablet">
+		<h6 style="float:right;" ><a href="ohjeet.html">Lisää..</a></h6>
+	</div>
+</div>
+</div><!-- .ruutu-12-tablet -->
 </div><!-- .rivi -->
 
-
+</div>
+</body>
+{% include footer.html %}
