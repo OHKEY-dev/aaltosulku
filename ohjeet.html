@@ -24,19 +24,26 @@ layout: default
 
 		<header class="ohjeet-header">
 			<div class="rivi">
-				<div class="ruutu-12-talbet">
-					<a href="index.html" style="vertical-align:middle;"><img src="{{ site.baseurl }}/assets/media/aaltosulku_logo1.svg" alt="aaltosulku.svg" style="width:220px;height:auto;float:left;" /></a> 
+				<div class="ruutu-12-tablet">
+					<div class="ruutu-4-tablet">
+						<div class="header-img">
+							<a href="index.html" style="vertical-align:middle;"><img src="{{ site.baseurl }}/assets/media/sulkulogo.svg" alt="sulkulogo.svg" style="width:50px;height:auto;float:left;" /></a> 
+						</div>
+					</div>
 
-					<nav>
-						<ul class="nav">
-							<li><a href="{{ site.baseurl }}/index.html">Etusivu</a></li>
-							<li><a   class="aktiivinen" href="{{ site.baseurl }}/ohjeet.html">Ohjeet</a></li>
-							<li><a href="{{ site.baseurl }}/yhteiso.html">Yhteisö</a></li>
-						</ul>
-					</nav>
+					<div class="ruutu-8-tablet">
+		
+							<nav>
+								<ul style="color:white;">
+									<li><a href="{{ site.baseurl }}/index.html">Etusivu</a></li>
+									<li><a class="aktiivinen" href="{{ site.baseurl }}/ohjeet.html">Ohjeet</a></li>
+									<li><a href="{{ site.baseurl }}/yhteiso.html">Yhteisö</a></li>
+								</ul>
+							</nav>
+						
+					</div>
 				</div>
 			</div>
-
 		</header>
 		<body>
 			<div class="content-container">
@@ -45,20 +52,11 @@ layout: default
 					<section>
 						<div class="rivi">
 							<div class="ruutu-12-tablet">
-								
-										<div class="toc-title"><h6>Sisällysluettelo</h6></div>
-
-
-										<ul class="toc-ul">
-
-										</ul>
-
-
-									
+								<div class="toc-title"><h6>Sisällysluettelo</h6></div>
+								<ul class="toc-ul">
+								</ul>
 							</div>
 						</div>
-
-
 					</section>
 					{% for category in site.categories %}
 					{% if category contains "git" or category contains "eclipse" or category contains "jekyll" or category contains "sublime text"%}
@@ -96,7 +94,3 @@ layout: default
 		</body>
 		<div class="push" style="clear:both"></div>
 		{% include footer.html %}
-
-
-
-

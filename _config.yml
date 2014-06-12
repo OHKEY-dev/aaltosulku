@@ -1,6 +1,7 @@
 name: aaltosulku
 baseurl: /aaltosulku
 permalink: none
+markdown: kramdown
 highlighter: true
 prose:
   rooturl: '_posts'
