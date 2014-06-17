@@ -11,7 +11,7 @@ $(function(){
 
 								var Class="list-group-item";
 								$(this).attr("id",thisTrimmerText);
-								$(".toc-ul").append('<li class="' + Class + ' cat-sub-toc"><a href="#' + thisTrimmerText + '" class="' + Class + '">'+ number + '. ' + thisText + '</a></li>'); 
+								$(".toc-ul").append('<li class="' + Class + ' cat-sub-toc"><a href="#' + thisTrimmerText + '" class="' + Class + '">'+ '' + ' ' + thisText + '</a></li>'); 
 							}
 
 							else {

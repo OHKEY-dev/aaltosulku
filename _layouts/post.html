@@ -1,39 +1,42 @@
 ---
 layout: default
 ---
-	<header>
+<header class="ohjeet-header">
 	<div class="rivi">
 		<div class="ruutu-12-tablet">
 			<div class="ruutu-4-tablet">
 				<div class="header-img">
-					<a href="index.html" style="vertical-align:middle;"><img src="{{ site.baseurl }}/assets/media/aaltosulku_logo1.svg" alt="aaltosulku.svg" style="height:auto;float:left;" /></a> 
+					<a href="index.html" style="vertical-align:middle;"><img src="{{ site.baseurl }}/assets/media/sulkulogo.svg" alt="sulkulogo.svg" style="width:50px;height:auto;float:left;" /></a> 
 				</div>
 			</div>
-			
+
 			<div class="ruutu-8-tablet">
+
 				<nav>
-					<ul style="color:white;" class="nav">
+					<ul style="color:white;">
 						<li><a href="{{ site.baseurl }}/index.html">Etusivu</a></li>
 						<li><a href="{{ site.baseurl }}/ohjeet.html">Ohjeet</a></li>
 						<li><a href="{{ site.baseurl }}/yhteiso.html">Yhteisö</a></li>
 					</ul>
 				</nav>
+
 			</div>
 		</div>
 	</div>
-	</header>
-	<body>
+</div>
+</header>
+<body>
 	<div class="content-container">
-<div class="rivi">
-	<div class="ruutu-12-tablet">
-		<h2>{{ page.title }}</h2>
-		<p class="meta">Julkaistu {{ page.date | date: "%d-%m-%Y" }}</p>
+		<div class="rivi">
+			<div class="ruutu-12-tablet">
+				<h2>{{ page.title }}</h2>
+				<p class="meta">Julkaistu {{ page.date | date: "%d-%m-%Y" }}</p>
 
-		<div class="post" style="padding-bottom:37%;margin-top:5%;">
-			{{ content }}
+				<div class="post" style="padding-bottom:37%;margin-top:5%;">
+					{{ content }}
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
-</div>
 </body>
 {% include footer.html %}

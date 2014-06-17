@@ -67,7 +67,7 @@ nav ul li {
 	display:inline-block;
 	text-align: center;
 	float:left;
-	padding:0px 5px;
+	padding:0px 10px;
 	margin: auto;
 
 	a:hover {
@@ -108,7 +108,6 @@ nav ul li {
 
 		li {
 			display: inline-block;
-			
 			float:left;
 		}
 
@@ -328,11 +327,19 @@ footer {
 
 .intro {
 	//background-color:rgba($lindeman-text-color,0.01);
+	//background-color:red;
+	//background-image:url('/assets/media/somecode2.png');
+	//background-repeat:no-repeat;
+	//background-attachment:fixed;
+	//background-position:center; 
 	background-color:$bg;
-	color:$lindeman-text-color;
 	font-size:125%;
 	color:white;
 	height:450px;
+
+	h1, h3 {
+		
+	}
 }
 
 
@@ -433,14 +440,7 @@ footer {
 }
 
 
-.nav{
 
-	li {
-		margin-top:-15px;
-		padding:15px;
-		position:relative;
-	}
-}
 
 
 .ohjeet-header{
@@ -459,6 +459,8 @@ header .aktiivinen	{
 header a:hover{
 	@extend .aktiivinen; 	
 }
+
+
 
 .push {
 	width:100%;
